@@ -67,3 +67,11 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 # we can have nested dynamic segments like [clientprojectid] insside [id]
 #If we want to catch all routes we can use [...slug] syntax for the same
 # for example we want to render the same component for all routes like blog/2022 or blog/2022/12 or blog/2022/12/2 then we need to create a js file with syntax [...id].js under blog folder
+# For navigating we usually anchor tag but this will create a new http request maling the app lose any application state. If we have any app state stored within context or redux then it will be lost
+# So will have to use Link from next/Link
+# We will be getting a brand new html if we are using anchor tag
+# To resolve this we can use Link from next/Link. and this will not create a new html page
+# href can be set as an object with pathname and query
+# router.push and router.replace are used to navigate dynamically
+# if we want show a custom 404 page we have to create a js file with name 404.js under pages folder
+
