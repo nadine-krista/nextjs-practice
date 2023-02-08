@@ -60,4 +60,10 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 # Storing data , getting data , authentication etc can be added to your React projects
 # In React js we have a public folder with an index.html. where as in next js public folder that html file is not present
 # Basically next js decides which page needs to be pre-rendered
-# 
+# useRouter along with functional components can be used to extract the dynamicpath segment data
+# WithRouter is used along with React class components
+# to capture the id from query we can use router.query.projectid
+# the router.pathname will give the path only with portfolio/[projectid]
+# we can have nested dynamic segments like [clientprojectid] insside [id]
+#If we want to catch all routes we can use [...slug] syntax for the same
+# for example we want to render the same component for all routes like blog/2022 or blog/2022/12 or blog/2022/12/2 then we need to create a js file with syntax [...id].js under blog folder
